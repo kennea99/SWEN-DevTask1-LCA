@@ -19,4 +19,3 @@ INDEX VERSION 1.131+C:\Users\Alex\Documents\GitHub\SWEN-DevTask1-LCA\.metadata\.
 1394848873.index
 1607282252.index
 3173990942.index
-3371117833.index
