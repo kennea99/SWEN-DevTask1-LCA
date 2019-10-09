@@ -34,6 +34,14 @@ public class LCATest {
 	public void LCATest()
 	{
 		LCA tree = new LCA();
+		tree.root = new TreeNode(1);
+		tree.root.left = new TreeNode(2);
+		tree.root.right = new TreeNode(3);
+		tree.root.left.left = new TreeNode(4);
+		tree.root.left.right = new TreeNode(5);
+		tree.root.right.left = new TreeNode(6);
+		tree.root.right.right = new TreeNode(7);
+		
 		TreeNode lca = tree.LCA(4,5);
 		assertEquals(2, lca.data);
 		
@@ -45,6 +53,28 @@ public class LCATest {
 		
 		tree = new LCA();
 		assertEquals(null, tree.LCA(10, 15));
+		
+		//keyPresent1 && keyPresent2 == false
+		tree = new LCA();
+		tree.root = new TreeNode(1);
+		tree.root.left = new TreeNode(2);
+		tree.root.right = new TreeNode(3);
+		assertEquals(null, tree.LCA(4, 5));
+		
+		//just keyPresent1 == false
+		tree = new LCA();
+		tree.root = new TreeNode(1);
+		tree.root.left = new TreeNode(2);
+		tree.root.right = new TreeNode(3);
+		assertEquals(null, tree.LCA(4, 3));
+		
+		//just keyPresent 2 == false
+		tree = new LCA();
+		tree.root = new TreeNode(1);
+		tree.root.left = new TreeNode(2);
+		tree.root.right = new TreeNode(3);
+		assertEquals(null, tree.LCA(2, 5));
+		
 	}
 	
 

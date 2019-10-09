@@ -14,6 +14,17 @@ class TreeNode
 	}
 }
 
+class DGraph
+{
+	Node start;
+	class Node
+	{
+		List<Node> parents;
+		List<Node> successors;
+		int val;
+	}
+}
+
 public class LCA
 {
 	//Using a binary tree as a data structure
@@ -78,6 +89,8 @@ public class LCA
 			return lca;
 		else return null;
 	}
+	
+	DGraph start;
 	
 	public static void main(String args[])
 	{
