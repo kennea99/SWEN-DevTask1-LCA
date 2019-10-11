@@ -14,6 +14,16 @@ class TreeNode
 	}
 }
 
+class DGraph
+{
+	Node start;
+	class Node
+	{
+		List<Node> parents;
+		List<Node> successors;
+		int val;
+	}
+}
 
 public class LCA
 {
@@ -80,6 +90,7 @@ public class LCA
 		else return null;
 	}
 	
+	DGraph start;
 	
 	public static void main(String args[])
 	{
