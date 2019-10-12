@@ -172,11 +172,6 @@ public class LCA_DAG {
 				
 	}
 	
-	public static void main(String[] args)
-	{
-		
-	}
-	
 	
 }
 
