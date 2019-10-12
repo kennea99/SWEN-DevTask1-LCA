@@ -1,0 +1,13 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class LCA_DAGTest {
+
+	@Test
+	public void LCA_DAGTest()
+	{
+		LCA_DAG dag = new LCA_DAG(0);
+		assertEquals(-1, dag.toString());
+	}
+}

@@ -10,7 +10,7 @@ public class LCA_DAG {
 	public LCA_DAG(int vertex)
 	{
 		if(vertex < 0)
-			return; // cant use a vertex that is out of bounds
+			vertex = -1;
 		else {
 		this.vertex = vertex;
 		this.edge = edge;

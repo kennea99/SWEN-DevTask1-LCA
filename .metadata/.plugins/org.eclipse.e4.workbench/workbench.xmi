@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_rtPtwOlUEemA_tN3O8TGdg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_rtPtwelUEemA_tN3O8TGdg" bindingContexts="_rtQ9Z-lUEemA_tN3O8TGdg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA_DAG.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA_DAG.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCA_DAG.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCATest.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCATest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCATest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCA.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA_DAGTest.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA_DAGTest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCA_DAGTest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA_DAG.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA_DAG.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCA_DAG.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCATest.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCATest.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCATest.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/LowestCommonAncestor/src/LCA.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_rtPtwelUEemA_tN3O8TGdg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_rtPtwulUEemA_tN3O8TGdg" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -73,7 +73,7 @@
           <tags>persp.newWizSC:org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard</tags>
           <tags>persp.actionSet:org.eclipse.jdt.junit.JUnitActionSet</tags>
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_rtPtxelUEemA_tN3O8TGdg" selectedElement="_rtPtz-lUEemA_tN3O8TGdg" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_rtPtxelUEemA_tN3O8TGdg" selectedElement="_rtPtxulUEemA_tN3O8TGdg" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_rtPtxulUEemA_tN3O8TGdg" containerData="2500" selectedElement="_rtPtx-lUEemA_tN3O8TGdg">
               <children xsi:type="basic:PartStack" xmi:id="_rtPtx-lUEemA_tN3O8TGdg" elementId="left" containerData="6000" selectedElement="_rtPtzOlUEemA_tN3O8TGdg">
                 <tags>org.eclipse.e4.primaryNavigationStack</tags>
@@ -105,7 +105,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_rtPtz-lUEemA_tN3O8TGdg" containerData="7500" selectedElement="_rtPt2ulUEemA_tN3O8TGdg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_rtPtz-lUEemA_tN3O8TGdg" containerData="7500" selectedElement="_rtPt0OlUEemA_tN3O8TGdg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_rtPt0OlUEemA_tN3O8TGdg" containerData="7500" selectedElement="_rtPt0elUEemA_tN3O8TGdg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_rtPt0elUEemA_tN3O8TGdg" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_rtQVnulUEemA_tN3O8TGdg"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_rtPt0ulUEemA_tN3O8TGdg" containerData="2500">
@@ -216,7 +216,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_rtQVnulUEemA_tN3O8TGdg" elementId="org.eclipse.ui.editorss" selectedElement="_rtQVn-lUEemA_tN3O8TGdg">
-      <children xsi:type="basic:PartStack" xmi:id="_rtQVn-lUEemA_tN3O8TGdg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_uDiSoOxoEemfKvA4ri6W_A">
+      <children xsi:type="basic:PartStack" xmi:id="_rtQVn-lUEemA_tN3O8TGdg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_PtUSIO0YEemtnfltoc5e9A">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -231,10 +231,16 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_uDiSoOxoEemfKvA4ri6W_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LCA_DAG.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA_DAG.java&quot; partName=&quot;LCA_DAG.java&quot; title=&quot;LCA_DAG.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA_DAG.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LowestCommonAncestor/src/LCA_DAG.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3081&quot; selectionTopPixel=&quot;2092&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA_DAG.java&quot; partName=&quot;LCA_DAG.java&quot; title=&quot;LCA_DAG.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA_DAG.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LowestCommonAncestor/src/LCA_DAG.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;224&quot; selectionTopPixel=&quot;150&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_PtUSIO0YEemtnfltoc5e9A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LCA_DAGTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LCA_DAGTest.java&quot; partName=&quot;LCA_DAGTest.java&quot; title=&quot;LCA_DAGTest.java&quot; tooltip=&quot;LowestCommonAncestor/src/LCA_DAGTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/LowestCommonAncestor/src/LCA_DAGTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;798&quot; selectionTopPixel=&quot;22&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -406,7 +412,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rtQWROlUEemA_tN3O8TGdg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_4RJV4O0HEemSML3ge_PDQw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_rtTZ3ulUEemA_tN3O8TGdg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_eVFpQO0XEemtnfltoc5e9A" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_rtTZ3ulUEemA_tN3O8TGdg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rtQWUelUEemA_tN3O8TGdg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -437,7 +443,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rtQWnelUEemA_tN3O8TGdg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_4RLyI-0HEemSML3ge_PDQw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_rtTZUelUEemA_tN3O8TGdg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_eVIFgu0XEemtnfltoc5e9A" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_rtTZUelUEemA_tN3O8TGdg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_rtQWqOlUEemA_tN3O8TGdg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
