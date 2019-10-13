@@ -36,10 +36,13 @@ public class LCA_DAG {
 		return vertex;
 	}
 	
-	void validate(int v)	// see if vertex that is attempting to be inserted is not within scope of graph.
+	public void validate(int v)	// see if vertex that is attempting to be inserted is not within scope of graph.
 	{
 		if(v < 0 || v>= vertex)
-			v = -1;
+		{
+			throw new IllegalArgumentException("not a valid vertex");
+			
+		}
 	}
 	
 	//adds an edge to graph x to y.
@@ -70,23 +73,15 @@ public class LCA_DAG {
 	public int inDeg(int x)
 	{
 		validate(x);
-		if(x == -1)
-			return -1;
-		else
-		{
-			return inDeg[x];
-		}
+		return inDeg[x];
+	
 	}
 	
 	public int outDeg(int x)
 	{
 		validate(x);
-		if(x == -1)
-			return -1;
-		else
-		{
-			return outDeg[x];
-		}
+		return outDeg[x];
+	
 	}
 	
 	public boolean cycleOccur()

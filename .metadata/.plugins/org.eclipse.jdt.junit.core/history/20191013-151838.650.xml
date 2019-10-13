@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LCA_DAGTest" project="LowestCommonAncestor" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="LCA_DAGTest" time="0.0">
+    <testcase name="LCA_DAGTest" classname="LCA_DAGTest" time="0.0"/>
+  </testsuite>
+</testrun>
