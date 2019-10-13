@@ -1,19 +1,19 @@
 
 public class LCA_DAG {
-	 int vertex;
-	 int edge;
-	 int[] outDeg;
-	 int[] inDeg;
-	 int[] visit;
-	 int[][] adjList;
+	int vertex;
+	int edge;
+	int[] outDeg;
+	int[] inDeg;
+	int[] visit;
+	int[][] adjList;
 	
 	public LCA_DAG(int vertex)
 	{
 		if(vertex < 0)
-			throw new IllegalArgumentException("number of vertices cannot be less than 0"); // cant use a vertex that is out of bounds
+			return; // cant use a vertex that is out of bounds
 		else {
 		this.vertex = vertex;
-		this.edge = 0;
+		this.edge = edge;
 		inDeg = new int[vertex];
 		outDeg = new int[vertex];
 		visit  = new int[vertex];
@@ -61,12 +61,14 @@ public class LCA_DAG {
 		return temp;
 	}
 	
-	//adds a directed edge to graph x to y.
+	//adds an edge to graph x to y.
 	public void addEdges(int x, int y)
 	{
 		validate(x);
 		validate(y);
-		adjList[x][y] = 1;
+		if(x == -1 || y == -1)
+			return;
+		adjList[x][y] = 0;
 		inDeg[y]++;
 		outDeg[x]++;
 		edge++;
@@ -76,6 +78,8 @@ public class LCA_DAG {
 	{
 		validate(x);
 		validate(y);
+		if(x == -1 || y == -1)
+			return;
 		adjList[x][y] = 0;
 		inDeg[y]--;
 		outDeg[x]--;
@@ -123,6 +127,8 @@ public class LCA_DAG {
 	{
 		validate(x);
 		validate(y);
+		if(x == -1 || y == -1)
+			return -1;
 		boolean cycle;
 		cycle = cycleOccur();
 		if(edge < 0 && cycle == false)

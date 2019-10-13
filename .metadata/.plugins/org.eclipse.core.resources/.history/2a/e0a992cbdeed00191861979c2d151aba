@@ -132,7 +132,6 @@ public class LCA_DAGTest {
 		dag.addEdges(4, 3);
 		assertTrue(dag.cycleOccur());
 		
-		//when there isnt any cycle.
 		dag = new LCA_DAG(8);
 		dag.addEdges(0, 1);
 		dag.addEdges(0, 2);
