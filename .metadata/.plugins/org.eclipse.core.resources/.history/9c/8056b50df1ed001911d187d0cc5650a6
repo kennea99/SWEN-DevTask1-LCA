@@ -109,7 +109,7 @@ public class LCA_DAG {
 		validate(y);
 		boolean cycle;
 		cycle = cycleOccur();
-		if(edge > 0 && cycle == false)
+		if(edge < 0 && cycle == false)
 			return LCAHelp(x, y);
 		else
 		{
@@ -167,7 +167,6 @@ public class LCA_DAG {
 		dag.addEdges(0, 1);
 		dag.addEdges(0, 2);
 		dag.addEdges(1, 3);
-		dag.addEdges(2, 3);
 		System.out.println(dag.LCA(1, 2));
 	}
 	

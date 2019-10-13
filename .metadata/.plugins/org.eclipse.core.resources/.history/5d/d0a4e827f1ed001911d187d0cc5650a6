@@ -109,7 +109,7 @@ public class LCA_DAG {
 		validate(y);
 		boolean cycle;
 		cycle = cycleOccur();
-		if(edge > 0 && cycle == false)
+		if(edge < 0 && cycle == false)
 			return LCAHelp(x, y);
 		else
 		{

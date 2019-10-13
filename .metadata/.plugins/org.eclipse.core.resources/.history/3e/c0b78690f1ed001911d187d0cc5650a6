@@ -164,7 +164,7 @@ public class LCA_DAGTest {
 		dag.addEdges(4, 5);
 		dag.addEdges(3, 5);
 		dag.addEdges(5, 6);
-		assertEquals(5, dag.LCA(1, 2));
+		assertEquals(6, dag.LCA(1, 2));
 		
 		
 	}
