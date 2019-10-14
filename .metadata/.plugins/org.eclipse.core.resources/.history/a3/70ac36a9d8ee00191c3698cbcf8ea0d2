@@ -29,16 +29,12 @@ public class LCATest {
 		tree.root.left.right = new TreeNode(5);
 		tree.root.right.left = new TreeNode(6);
 		tree.root.right.right = new TreeNode(7);
-		node = tree.findLCA(tree.root, 6, 7);
+		node = tree.findLCA(tree.root.right, 6, 7);
 		assertEquals(3, node.data);
 		
-		//testing LCA when nodes are not directly connected to the same node.
-		node = tree.findLCA(tree.root, 4, 7);
+		node = tree.findLCA(tree.root, 6, 7);
 		assertEquals(1, node.data);
 		
-		//trying to find LCA of same node
-		node = tree.findLCA(tree.root, 2, 2);
-		assertEquals(2, node.data);
 		
 		
 	}

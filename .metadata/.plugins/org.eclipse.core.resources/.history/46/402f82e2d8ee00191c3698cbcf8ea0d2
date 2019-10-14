@@ -38,7 +38,7 @@ public class LCATest {
 		
 		//trying to find LCA of same node
 		node = tree.findLCA(tree.root, 2, 2);
-		assertEquals(2, node.data);
+		assertEquals(null, node.data);
 		
 		
 	}
