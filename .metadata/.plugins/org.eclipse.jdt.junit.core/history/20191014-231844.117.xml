@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LCA_DAGTest" project="LowestCommonAncestor" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="LCA_DAGTest" time="0.0">
+    <testcase name="cycleOccur" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="outDeg" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="LCA_DAGTest" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="verticesTest" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="addEdgesTest" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="edgesTest" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="LCATest" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="inDegTest" classname="LCA_DAGTest" time="0.0"/>
+    <testcase name="validateTest" classname="LCA_DAGTest" time="0.0"/>
+  </testsuite>
+</testrun>
