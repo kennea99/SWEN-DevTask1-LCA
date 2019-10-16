@@ -55,7 +55,7 @@ public class LCA_DAG {
 		outDeg[x]++;
 		edge++;
 	}
-	//removes edge x to y from graph
+	
 	public void removeEdges(int x, int y)
 	{
 		validate(x);
@@ -65,21 +65,21 @@ public class LCA_DAG {
 		outDeg[x]--;
 		edge--;
 	}
-	//returns the indegree of vertex x(number of edges incoming to a vertex)
+	
 	public int inDeg(int x)
 	{
 		validate(x);
 		return inDeg[x];
 	
 	}
-	//returns the outdegree of a vertex(number of outgoing edges of a vertex).
+	
 	public int outDeg(int x)
 	{
 		validate(x);
 		return outDeg[x];
 	
 	}
-	//returns whether a cycle occurs in a directed graph, graph must be acyclic to find LCA
+	
 	public boolean cycleOccur()
 	{
 		boolean cycle = false;
@@ -102,14 +102,14 @@ public class LCA_DAG {
 		}
 		return cycle;
 	}
-	//finds the LCA of vertices x and y
+	
 	public int LCA(int x, int y)
 	{
 		validate(x);
 		validate(y);
 		boolean cycle;
 		cycle = cycleOccur();
-		if(edge > 0 && cycle == false) //if there are no edges or there is a cycle, it cannot be a directed acyclic graph
+		if(edge > 0 && cycle == false)
 			return LCAHelp(x, y);
 		else
 		{
@@ -151,19 +151,18 @@ public class LCA_DAG {
 					yPath[countY] = k;		//becomes the current LCA
 					yVisited[k] = true;
 				}
-				if(yPath[countY] == xPath[countX]) //if both of these are equal then we have found the LCA of x and y 
+				if(yPath[countY] == xPath[countX]) //if both of these are equals then we have found the LCA of x and y
 				{
 					return yPath[countY];
 				}
 			}
 		}
-		return -1; // no ancestor so return -1.
+		return -1; // no ancestor
 				
 	}
 	
 	public static void main(String[] args)
 	{
-		//very quick main to show the LCA of a small DAG
 		LCA_DAG dag = new LCA_DAG(4);
 		dag.addEdges(0, 1);
 		dag.addEdges(0, 2);
