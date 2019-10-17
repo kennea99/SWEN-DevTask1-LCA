@@ -163,7 +163,7 @@ public class LCA_DAG {
 	
 	public static void main(String[] args)
 	{
-		//very quick main function to show the LCA of a small DAG
+		//very quick main to show the LCA of a small DAG
 		LCA_DAG dag = new LCA_DAG(4);
 		dag.addEdges(0, 1);
 		dag.addEdges(0, 2);
