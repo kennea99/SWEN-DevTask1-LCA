@@ -25,42 +25,41 @@ public class LCA_DAGTest {
 		assertEquals(5, dag.vertices());
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void validateTest()
 	{
-		//when int v <0
+		LCA_DAG dag = new LCA_DAG(3);
+		//when V is within the boundaries of the dag
+		int V = 2;
+		dag.validate(V);
+		assertEquals(2, V);
+	}
+	@Test(expected = IllegalArgumentException.class)
+	public void validateTestException1()
+	{
+		//when int v < 0
 		LCA_DAG dag = new LCA_DAG(3);
 		int V = -2;
 		dag.validate(V);
 		assertEquals("should throw exception", null);
-		
+	}
+	@Test(expected = IllegalArgumentException.class)
+	public void validateTestException2()
+	{
 		//when v is greater than the no. of vertices in the dag
-		V = 5;
+		LCA_DAG dag = new LCA_DAG(3);
+		int V = 5;
 		dag.validate(V);
-		assertEquals("should throw exception" , null);
-		
-		//when V is within the boundaries of the dag
-		V = 2;
-		dag.validate(V);
-		assertEquals(2, V);
+		assertEquals("should throw exception", null);
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void addEdgesTest()
 	{
 		LCA_DAG dag = new LCA_DAG(5);
-		//testing when vertex1 is out of bounds
-		int x = 6; int y = 3;
-		dag.addEdges(x, y);
-		assertEquals("should throw exception", null); //cannot add this edge
-		
-		//testing when vertex2 is out of bounds
-		x = 2; y = 6;
-		dag.addEdges(x,  y);
-		assertEquals(-1, y);//cannot add this edge.
-		
+
 		//testing when an edge can be created between two vertices
-		x = 1; y =3;
+		int x = 1; int y =3;
 		dag.addEdges(x, y);
 		assertEquals(1, dag.edge); //number of edges
 		
@@ -70,31 +69,23 @@ public class LCA_DAGTest {
 		dag.addEdges(2, 3);
 		dag.addEdges(1, 4);
 		assertEquals(3, dag.edge);
+		
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void removeEdgeTest()
 	{
 		LCA_DAG dag = new LCA_DAG(6);
-		//testing when vertex1 is out of bounds
-		int x = 6; int y = 3;
-		dag.removeEdges(x, y);
-		assertEquals("should throw exception", null); //cannot add this edge
-		
-		//testing when vertex2 is out of bounds
-		x = 2; y = 7;
-		dag.addEdges(x, y);
-		assertEquals("exception thrown", null);//cannot add this edge.
 		
 		//testing when there is one edge in the DAG and we remove it
-		x = 1; y= 3;
-		dag.addEdges(x, y); //dag.edge = 1;
+		
+		dag.addEdges(1, 3); //dag.edge = 1;
 		//removing edge
-		dag.removeEdges(x, y);
+		dag.removeEdges(1, 3);
 		assertEquals(0, dag.edge);
 		
 		//trying to remove an edge that isnt an edge
-		dag.addEdges(x, y);
+		dag.addEdges(1, 3);
 		dag.removeEdges(3, 4); //since there is no edge the code will run and not do anything leaving the existing edges
 		assertEquals(1, dag.edge);
 		
@@ -124,45 +115,36 @@ public class LCA_DAGTest {
 		assertEquals(3, dag.edge);
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void inDegTest()
 	{
 		LCA_DAG dag = new LCA_DAG(8);
-		//out of scope
-		int x = -2;
-		dag.inDeg(x);
-		assertEquals("should throw exception", null);
+		dag.addEdges(0, 1);
+		dag.addEdges(0, 2);
+		dag.addEdges(1, 3);
+		dag.addEdges(1, 2);
+		//when the indegree is a valid vertex and has edges
+		assertEquals(2, dag.inDeg(2));
 		
-		//x > vertex
-		x = 10;
-		dag.inDeg(x);
-		assertEquals("should throw exception", null);
+		//indegree of a vertex with no edges connected to it
+		assertEquals(0, dag.inDeg(7));
 		
-		//in scope
-		x = 4;
-		dag.inDeg(x);
-		assertEquals(4, dag.inDeg[x]);
+
 			
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void outDeg()
 	{
 		LCA_DAG dag = new LCA_DAG(8);
-		//out of scope
-		int x = -3;
-		dag.outDeg(x);
-		assertEquals("should throw exception", null);
+		dag.addEdges(0, 1);
+		dag.addEdges(0, 2);
+		dag.addEdges(1, 3);
+		//out degree of a node with no edges
+		assertEquals(0,  dag.outDeg(5));
 		
-		//x > vertex
-		x = 12;
-		dag.outDeg(x);
-		assertEquals("should throw exception", null);
-		
-		//in scope
-		x = 6;
-		dag.outDeg(x);
-		assertEquals(6, dag.outDeg[x]);
+		//out degree of a node with edges
+		assertEquals(2, dag.outDeg(0));
 		
 	}
 	
@@ -189,7 +171,7 @@ public class LCA_DAGTest {
 		
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void LCATest()
 	{
 		LCA_DAG dag = new LCA_DAG(10);
@@ -200,11 +182,7 @@ public class LCA_DAGTest {
 		dag.addEdges(2, 4);//  2 -------> 4
 		dag.addEdges(4, 3);//
 		assertEquals(-1, dag.LCA(1, 2));
-		//when x is not in bounds when there is a cycle(validate() should trigger an exception).
-		assertEquals("throw exception", null, dag.LCA(11, 2));
-		
-		//when y is not in bounds when there is a cycle(validate() should trigger an exception).
-		assertEquals("throw exception", null, dag.LCA(2,11));
+
 		
 		//when it is a directed acyclic graph
 		dag = new LCA_DAG(10);
@@ -221,12 +199,7 @@ public class LCA_DAGTest {
 		assertEquals(-1, dag.LCA(2, 7));
 		assertEquals(-1, dag.LCA(7, 2));
 		
-		//when x is not in bounds using DAG.
-		assertEquals("throw exception", null, dag.LCA(11, 2));
-		
-		//when y is not in bounds using DAG
-		assertEquals("throw exception", null, dag.LCA(11, 9));
-		
+
 		
 	}
 }

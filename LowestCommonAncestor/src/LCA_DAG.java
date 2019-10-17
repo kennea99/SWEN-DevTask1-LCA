@@ -60,10 +60,15 @@ public class LCA_DAG {
 	{
 		validate(x);
 		validate(y);
+		if(adjList[x][y] == 1) //if an edge already exists
+		{
 		adjList[x][y] = 0;
 		inDeg[y]--;
 		outDeg[x]--;
 		edge--;
+		}
+		else
+			return;
 	}
 	//returns the indegree of vertex x(number of edges incoming to a vertex)
 	public int inDeg(int x)
@@ -163,13 +168,7 @@ public class LCA_DAG {
 	
 	public static void main(String[] args)
 	{
-		//very quick main function to show the LCA of a small DAG
-		LCA_DAG dag = new LCA_DAG(4);
-		dag.addEdges(0, 1);
-		dag.addEdges(0, 2);
-		dag.addEdges(1, 3);
-		dag.addEdges(2, 3);
-		System.out.println(dag.LCA(1, 2));
+
 	}
 	
 	
