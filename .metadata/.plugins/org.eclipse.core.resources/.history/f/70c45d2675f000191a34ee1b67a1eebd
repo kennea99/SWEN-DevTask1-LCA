@@ -46,7 +46,6 @@ public class LCATest {
 	@Test 
 	public void LCATest()
 	{
-		//testing various LCA of Tree
 		LCA tree = new LCA();
 		tree.root = new TreeNode(1);
 		tree.root.left = new TreeNode(2);
