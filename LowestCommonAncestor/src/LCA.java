@@ -14,6 +14,7 @@ class TreeNode
 	}
 }
 
+
 public class LCA
 {
 	//Using a binary tree as a data structure
@@ -78,6 +79,7 @@ public class LCA
 			return lca;
 		else return null;
 	}
+	
 	
 	public static void main(String args[])
 	{
